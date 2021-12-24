@@ -103,6 +103,7 @@ class ReloadCommand extends Command {
                             .setName('name')
                             .setDescription('The name of the piece to reload')
                             .setRequired(true)
+                            .setAutocomplete(true)
                     )
             )
             .addSubcommand(subcommand =>
@@ -114,6 +115,7 @@ class ReloadCommand extends Command {
                             .setName('name')
                             .setDescription('The name of the store to reload')
                             .setRequired(true)
+                            .setAutocomplete(true)
                     )
             )
             .addSubcommand(subcommand =>
