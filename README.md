@@ -1,6 +1,6 @@
-## discord-bot-template
+## plexidev-starboard-bot
 
-A work-in-progress starter template for Discord bots built on [`@sapphiredev/framework`](https://github.com/sapphiredev/framework)
+A simple bot that functions as the starboard for Plexi Development.
 
 ## Database
 

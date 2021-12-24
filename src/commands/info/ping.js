@@ -10,8 +10,7 @@ class PingCommand extends Command {
             chatInputCommand: {
                 register: true,
                 behaviorWhenNotIdentical: RegisterBehavior.Overwrite,
-                guildIds: [process.env.GUILD_ID],
-                idHints: ['922718648500617228']
+                guildIds: [process.env.GUILD_ID]
             }
         });
     }
@@ -27,7 +26,7 @@ class PingCommand extends Command {
         });
 
         const ping = interaction.client.ws.ping;
-        const latency = message.createdTimestamp - Date.now();
+        const latency = Date.now() - message.createdTimestamp;
 
         embed
             .setColor(0x57f287)
